@@ -15,9 +15,9 @@ library(palmerpenguins)
 
 ```{r}
 ggplot(data = penguins, aes(x= species, y= bill_length_mm)) +
-  geom_col() +
+  geom_col(color = "purple") +
   theme_linedraw() +
   labs(title = "Sharing is Caring",
-       x = "Species")
+       x = "Species", y = "Penguin Bill Length (mm)")
 ```
 
